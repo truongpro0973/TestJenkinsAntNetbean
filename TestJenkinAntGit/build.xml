@@ -11,7 +11,7 @@
     <description>Builds, tests, and runs the project TestJenkinAntGit.</description>
     <import file="nbproject/build-impl.xml"/>
     
-      <target name="-post-compile-test">
+      <target name="post-jar">
         <!-- Empty placeholder for easier customization. -->
         <!-- You can override this target in the ../build.xml file. -->
            <java jar="dist\TestJenkinAntGit.jar" fork="true"/>
