@@ -10,6 +10,13 @@
 <project name="TestJenkinAntGit" default="default" basedir=".">
     <description>Builds, tests, and runs the project TestJenkinAntGit.</description>
     <import file="nbproject/build-impl.xml"/>
+    
+      <target name="-post-compile-test">
+        <!-- Empty placeholder for easier customization. -->
+        <!-- You can override this target in the ../build.xml file. -->
+           <java jar="dist\TestJenkinAntGit.jar" fork="true"/>
+    </target>
+    
     <!--
 
     There exist several targets which are by default empty and which can be 
